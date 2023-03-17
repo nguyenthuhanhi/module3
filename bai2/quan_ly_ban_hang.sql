@@ -1,30 +1,31 @@
-create database quan_ly_ban_hang_bai_2;
-use quan_ly_ban_hang_bai_2;
+create database bai2_quan_ly_ban_hang;
+use bai2_quan_ly_ban_hang;
 
 create table customer (
  id int primary key,
- `name` varchar(50) not null,
- age int 
+ `name` varchar(25) not null,
+ age tinyint 
 );
 
-create table orderr(
+create table `order`(
 	id int primary key,
-    `date` date,
-    total_price double,
-    customer_id int,
-    foreign key (customer_id)references customer(id)
+	customer_id int,
+    foreign key (customer_id)references customer(id),
+    `date` datetime,
+    total_price int
 );
 
 create table product(
 	id int primary key,
-    `name` varchar (50),
-    price double
+    `name` varchar (25),
+    price int
 );
 
 create table order_detail(
 	order_id int,
-    foreign key (order_id)references orderr(id),
+    foreign key (order_id)references `order`(id),
     product_id int,
     foreign key (product_id)references product(id),
     quantity int
 );
+

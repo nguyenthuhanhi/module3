@@ -1,5 +1,5 @@
-create database erd;
-use erd;
+create database bai2_erd;
+use bai2_erd;
 
 create table phieu_xuat(
 	so_px int primary key,
@@ -13,17 +13,17 @@ create table phieu_nhap(
 	so_pn int primary key,
     ngay_nhap date
 );
-create table don_dh(
-	so_dh int primary key,
-    ngay_dh date
-);
+
 create table nha_cc(
 	ma_ncc int primary key,
     ten_ncc varchar (50),
-    dia_chi varchar(50),
-    sdt int
+    dia_chi varchar(50)
 );
-
+create table sdt(
+	ma_ncc int,
+    foreign key(ma_ncc) references nha_cc(ma_ncc),
+	sdt int
+    );
 create table chi_tiet_phieu_xuat(
 	dg_nx float,
     sl_xuat int,
@@ -45,8 +45,4 @@ create table chi_tiet_don_dat_hang(
     FOREIGN KEY (ma_vattu)  REFERENCES vat_tu(ma_vattu),
     so_dh int,
     foreign key (so_dh)references don_dh(so_dh)
-);
-create table cung_cap(
-	ma_ncc int,
-    foreign key (ma_ncc)references nha_cc(ma_ncc)
 );
