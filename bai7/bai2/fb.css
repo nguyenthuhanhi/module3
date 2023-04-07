@@ -1,0 +1,104 @@
+.fb{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+            'fixed fixed fixed fixed'
+            'sidebar content content content'
+;
+    grid-gap: 2px;
+}
+.item1 {
+    grid-area: fixed;
+    /*position: fixed;*/
+    /*max-width: 1000px;*/
+}
+.item2 {
+    grid-area: sidebar;
+    /*position: relative;*/
+    /*top: 50px;*/
+}
+.item3 {
+    grid-area: content;
+    /*position: relative;*/
+    /*top: 50px;*/
+
+}
+
+.fb >div{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.item1{
+    display: flex;
+    align-items: center;
+    /*border: 1px solid palevioletred;*/
+    background: darkgray;
+}
+
+.item1 .logo{
+    flex: 30%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 .logo a img{
+    max-width:50px;
+    max-height:50px;
+    /*margin-bottom: 10px;*/
+    vertical-align: middle;
+}
+
+.item1 .function1{
+    flex: 80%;
+}
+.item1 .function1 #menu {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.item1 .function1 #menu li{
+    padding: 5px 20px;
+}
+
+.item2 .function2 #menu_function {
+   list-style: none;
+}
+.item2 .function2 #menu_function li{
+    margin-bottom: 15px;
+    color: white;
+}
+.item2 ,.item3{
+    text-align: left;
+    background: #333333;
+    height: 800px;
+}
+.item2 .function2 #home_page a {
+    color: white;
+}
+.item3 .function3 a {
+    color: white;
+    font-size: 20px;
+}
+
+.item3 .function3 p {
+    color: white;
+    font-size: 20px;
+}
+.item3 .function3 #codegym{
+    max-width:500px;
+    max-height:500px;
+    vertical-align: middle;
+}
+li:hover{
+    font-size: 20px;
+    color: red;
+}
+a:hover{
+    font-size: 20px;
+    color: red;
+}
+

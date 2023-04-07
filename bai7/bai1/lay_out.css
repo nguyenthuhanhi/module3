@@ -1,0 +1,38 @@
+body {
+    font-family: Verdana,sans-serif;
+    font-size: 0.9em;
+
+}
+
+header, footer {
+    padding: 10px;
+    color: palevioletred;
+
+}
+
+section {
+    margin: 5px;
+    padding: 10px;
+
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+
+}
+aside{
+    margin: 5px;
+    padding: 10px;
+
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+
+}

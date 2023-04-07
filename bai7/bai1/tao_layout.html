@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .addlayout >div{
+            background-color: cornsilk;
+            border: 1px solid #fff ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+       .addlayout{
+           display: grid;
+           grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'section section aside'
+            'artice artice aside'
+            'footer footer footer'
+       ;
+           grid-gap: 10px;
+
+       }
+        .item1{ grid-area: header}
+        .item2{ grid-area: nav}
+        .item3{ grid-area: section}
+        .item4{ grid-area: artice}
+        .item5{ grid-area: aside}
+        .item6{ grid-area: footer}
+    </style>
+    <link rel="stylesheet" type="text/css" href="lay_out.css">
+</head>
+<body>
+    <div class="addlayout">
+        <div class="item1">
+            <header>
+                <h1>Monday Times</h1>
+            </header>
+        </div>
+        <div class="item2" id="menu">
+            <nav>
+                <ul>
+                    <li>News</li>
+                    <li>Sports</li>
+                    <li>Weather</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="item3">
+            <section>
+                <h2>News Section</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+            </section>
+        </div>
+        <div class="item4">
+            <article>
+                <h2>News Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+            </article>
+        </div>
+        <div class="item5">
+            <aside>
+                <h2>News Aside</h2>
+            </aside>
+        </div>
+        <div class="item6">
+            <footer>
+                <p>&copy; 2014 Monday Times. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

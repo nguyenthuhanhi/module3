@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+
+}
+
+.nav > a > img {
+    padding-left: 100px;
+    padding-top: 8px;
+    float: left;
+    height: 38px;
+    width: 229px;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    padding-left: 70px;
+    padding-top: 19px;
+}
+
+.menu > ul > li > a:hover {
+    color: #FF0000;
+}
+
+.menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.content > .content-img > img {
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.thegioituccau {
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-left: 0px;
+    padding-left: 150px;
+    font-family: "UTM Bebas", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: #1a1a1a;
+
+}
+
+.thegioituccau > h1::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 200px;
+    background-color: red;
+}
+
+.thegioituccau>h1:hover{
+    color: #FF0000;
+}
+.cauThu {
+    background-color: #1a1a1a;
+}
+
+.cauThu > a > img:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.cauThu > a > img {
+    display: inline;
+    margin-top: 35px;
+    margin-left: 224px;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px 15px 15px;
+}
+
+.cauthutre > h1 {
+    color: white;
+    font-size: 2.60417vw;
+    display: block;
+    margin-left: 0px;
+    padding-left: 150px;
+    font-family: "UTM Bebas", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.cauthutre {
+    background-color: #1a1a1a;
+}
+.cauthutre>h1:hover{
+    color: #FF0000;
+}
+
+.cauthutre > h1::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 550px;
+    background-color: red;
+}
+
+.CauThuTre1 > a > img:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+
+}
+
+.CauThuTre1 > a > img {
+    display: inline;
+    margin-top: 35px;
+    margin-left: 224px;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px 15px 15px;
+
+
+}
+
+.CauThuTre1 {
+    background-color: #1a1a1a;
+
+}
+
+.tambiet  > h1 {
+    font-size: 2.60417vw;
+    padding-left: 150px;
+    display: block;
+    color: white;
+    background-color: #1a1a1a;
+    font-family: "UTM Bebas", sans-serif;
+}
+
+.tambiet  > h1:hover {
+    color: #FF0000;
+
+}
+
+.tambiet  > h1::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 350px;
+    background-color: red;
+}
